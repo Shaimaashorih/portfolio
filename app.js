@@ -32,12 +32,12 @@
       links: [{ href: "https://mag-opt.com/", ar: "النسخة الحية", en: "Live system" }],
       ar: {
         category: "حسابات وشحن ومتابعة عملاء",
-        summary: "منصة تشغيل للشركة: حسابات، شحن، متابعة عملاء، واتساب، ربط Meta WhatsApp، وطلبات Shopify. التطوير عند 70٪. البيانات الحية خاصة بالشركة، وتوجد نسخة محلية للتجربة.",
+        summary: "منصة تشغيل للشركة: حسابات، شحن، متابعة عملاء، واتساب، ربط Meta WhatsApp، وطلبات Shopify. البيانات الحية خاصة بالشركة، والنسخة متاحة معي للتجربة محليًا.",
         points: ["حسابات", "شحن", "متابعة عملاء", "واتساب", "Meta WhatsApp", "Shopify"]
       },
       en: {
         category: "Accounting, shipping, and customers",
-        summary: "An operations platform for accounting, shipping, customer follow-up, WhatsApp, the Meta WhatsApp connection, and Shopify orders. Development is at 70%. Live data stays with the company, and a local build is available to walk through.",
+        summary: "An operations platform for accounting, shipping, customer follow-up, WhatsApp, the Meta WhatsApp connection, and Shopify orders. Live data stays with the company, and a local trial is available with me.",
         points: ["Accounting", "Shipping", "Customer follow-up", "WhatsApp", "Meta WhatsApp", "Shopify"]
       }
     },
@@ -58,6 +58,28 @@
         category: "Vehicle tracking and fleet",
         summary: "A client system for a vehicle-tracking and fleet business, from sign-in through the company’s operating dashboard.",
         points: ["Vehicle tracking", "Fleet management", "Operations dashboard", "Client business"]
+      }
+    },
+    {
+      kind: "system",
+      status: "live",
+      mark: "LM",
+      color: "#16324f",
+      title: "Lex Mizan",
+      links: [
+        { href: "https://lexmizan.com/", ar: "الموقع والنظام", en: "Website and system" },
+        { href: "https://lexmizan.com/login", ar: "صفحة الدخول", en: "Login" }
+      ],
+      access: { email: "shaimaa@admin.com", password: "123456789" },
+      ar: {
+        category: "نظام إدارة مكاتب المحاماة",
+        summary: "نظام للمحامين يجمع القضايا والموكلين والجلسات والمستندات والفواتير في مكان واحد، مع موقع تعريفي وصفحة دخول للتجربة.",
+        points: ["قضايا", "موكلون", "جلسات", "مستندات", "فواتير"]
+      },
+      en: {
+        category: "Law firm management",
+        summary: "A system for law offices covering cases, clients, hearings, documents, and billing, with a public site and a login for a trial.",
+        points: ["Cases", "Clients", "Hearings", "Documents", "Billing"]
       }
     },
     {
@@ -178,6 +200,44 @@
       }
     },
     {
+      kind: "website",
+      status: "live",
+      mark: "AK",
+      color: "#0e4b3c",
+      title: "أكنانا",
+      enTitle: "AKNANA",
+      links: [{ href: "https://aknana.com/", ar: "زيارة الموقع", en: "Visit site" }],
+      ar: {
+        category: "موقع تعريفي",
+        summary: "موقع تعريفي لاستوديو أكنانا في السعودية: منظومة مشاريع تعرض الرؤية، نطاقات العمل، وطريقة بناء المشروع من الفكرة حتى التشغيل.",
+        points: ["استوديو مشاريع", "نطاقات عمل", "رؤية وطريقة", "السعودية"]
+      },
+      en: {
+        category: "Brochure website",
+        summary: "A brochure site for AKNANA in Saudi Arabia: a project studio presenting its vision, fields of work, and the path from idea to operation.",
+        points: ["Project studio", "Fields of work", "Vision and method", "Saudi Arabia"]
+      }
+    },
+    {
+      kind: "website",
+      status: "live",
+      mark: "حو",
+      color: "#8a5a2b",
+      title: "الحواشي",
+      enTitle: "Alhawashi",
+      links: [{ href: "https://alhawashiksa.com/", ar: "زيارة الموقع", en: "Visit site" }],
+      ar: {
+        category: "موقع تعريفي",
+        summary: "موقع تعريفي لمؤسسة الحواشي للمقاولات العامة في الرياض، يعرض الدهانات والديكور والتشطيبات مع المشاريع والعملاء.",
+        points: ["دهانات", "ديكور وتشطيب", "مشاريع", "الرياض"]
+      },
+      en: {
+        category: "Brochure website",
+        summary: "A brochure site for Alhawashi General Contracting in Riyadh, presenting painting, décor, and finishing work alongside projects and clients.",
+        points: ["Painting", "Décor and finishing", "Projects", "Riyadh"]
+      }
+    },
+    {
       kind: "store",
       status: "live",
       mark: "WA",
@@ -239,7 +299,7 @@
       pageTitle: "بورتفوليو أعمال",
       folio: "سيرة أعمال",
       eyebrow: "يُرفق مع السيرة الذاتية",
-      region: "أعمال مسلّمة في مصر والأردن",
+      region: "أعمال مسلّمة في مصر والأردن والسعودية",
       lede: "أبني أنظمة تدير الشركة من الداخل، ومتاجر تبيع من الخارج. من الموارد البشرية والرواتب وربط البصمة، إلى الحسابات والشحن وواتساب وShopify، وتتبع المركبات، وERP مع نقطة البيع.",
       seeWork: "الأعمال",
       savePdf: "حفظ PDF",
@@ -274,7 +334,7 @@
       filter_website: "المواقع",
       showing: "المعروض",
       status_live: "يعمل الآن",
-      status_partial: "تطوير 70٪",
+      status_partial: "متاحة للتجربة محليًا",
       status_local: "عرض محلي",
       status_client: "نظام لعميل",
       status_new: "موقع جديد",
@@ -282,7 +342,7 @@
       demoEmail: "البريد",
       demoPassword: "كلمة المرور",
       bioTitle: "نبذة جاهزة للسيرة",
-      bio: "مطوّر أنظمة أعمال ومتاجر إلكترونية. أبني منصات تشغيل ومواقع بيع عاملة: موارد بشرية برواتب وحضور وربط أجهزة البصمة وتوظيف، وحسابات وشحن ومتابعة عملاء مع واتساب وShopify، وتتبع مركبات، وERP مع نقطة بيع. من الأعمال: EVO HR، وMagalis، ومتجر إلكتروني بلوحة تحكم، ونظام إسنا لتتبع المركبات، وYachtly لتأجير اليخوت، وموقع تبرعات جمعية البر بالخرج، وموقع مؤسسة الموئل، ومتاجر Walker وسما فارم وKarma، إلى جانب نظام نقل ومواقع أخرى.",
+      bio: "مطوّر أنظمة أعمال ومتاجر إلكترونية. أبني منصات تشغيل ومواقع بيع عاملة: موارد بشرية برواتب وحضور وربط أجهزة البصمة وتوظيف، وحسابات وشحن ومتابعة عملاء مع واتساب وShopify، وتتبع مركبات، وERP مع نقطة بيع، ونظام لإدارة مكاتب المحاماة. من الأعمال: EVO HR، وMagalis، وLex Mizan، ومتجر إلكتروني بلوحة تحكم، ونظام إسنا لتتبع المركبات، وYachtly لتأجير اليخوت، وموقع تبرعات جمعية البر بالخرج، وموقع مؤسسة الموئل، وموقعا أكنانا والحواشي التعريفيان، ومتاجر Walker وسما فارم وKarma، إلى جانب نظام نقل ومواقع أخرى.",
       copyBio: "انسخ النبذة",
       copied: "تم نسخ النبذة",
       copyFail: "انسخ النص يدويًا",
@@ -298,7 +358,7 @@
       pageTitle: "Work portfolio",
       folio: "Selected work",
       eyebrow: "Sent with the CV",
-      region: "Delivered work in Egypt and Jordan",
+      region: "Delivered work in Egypt, Jordan, and Saudi Arabia",
       lede: "I build the systems a company runs on, and the stores it sells through. That includes HR and payroll with fingerprint devices, accounting and shipping, WhatsApp and Shopify, vehicle tracking, and ERP with a point of sale.",
       seeWork: "Selected work",
       savePdf: "Save PDF",
@@ -333,7 +393,7 @@
       filter_website: "Websites",
       showing: "Showing",
       status_live: "Live",
-      status_partial: "In progress · 70%",
+      status_partial: "Local trial with me",
       status_local: "Local demo",
       status_client: "Client system",
       status_new: "New site",
@@ -341,7 +401,7 @@
       demoEmail: "Email",
       demoPassword: "Password",
       bioTitle: "Summary for the CV",
-      bio: "Business-systems and e-commerce developer. I build operating platforms and live stores: HR with payroll, attendance, fingerprint devices, and hiring; accounting, shipping, and customer follow-up with WhatsApp and Shopify; vehicle tracking; and ERP with a point of sale. The work includes EVO HR, Magalis, an online store with an admin dashboard, the Esna vehicle-tracking system, Yachtly for yacht rental, the Al-Birr Al-Kharj donations site, the Al Mawel foundation site, and the Walker, Sama Farm, and Karma stores, plus a transport system and other websites.",
+      bio: "Business-systems and e-commerce developer. I build operating platforms and live stores: HR with payroll, attendance, fingerprint devices, and hiring; accounting, shipping, and customer follow-up with WhatsApp and Shopify; vehicle tracking; ERP with a point of sale; and a system for law offices. The work includes EVO HR, Magalis, Lex Mizan, an online store with an admin dashboard, the Esna vehicle-tracking system, Yachtly for yacht rental, the Al-Birr Al-Kharj donations site, the Al Mawel foundation site, the AKNANA and Alhawashi brochure sites, and the Walker, Sama Farm, and Karma stores, plus a transport system and other websites.",
       copyBio: "Copy summary",
       copied: "Summary copied",
       copyFail: "Please copy the text manually",
