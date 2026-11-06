@@ -352,7 +352,10 @@
       email: "البريد",
       phone: "الهاتف",
       whatsapp: "واتساب",
-      linkedin: "لينكدإن"
+      linkedin: "لينكدإن",
+      github: "GitHub",
+      getInTouch: "تواصل",
+      downloadCv: "تحميل السيرة"
     },
     en: {
       pageTitle: "Work portfolio",
@@ -411,7 +414,10 @@
       email: "Email",
       phone: "Phone",
       whatsapp: "WhatsApp",
-      linkedin: "LinkedIn"
+      linkedin: "LinkedIn",
+      github: "GitHub",
+      getInTouch: "Get in touch",
+      downloadCv: "Download CV"
     }
   };
 
@@ -458,7 +464,24 @@
     if (profile.phone) items.push({ href: "tel:" + profile.phone, label: profile.phone });
     if (profile.whatsapp) items.push({ href: "https://wa.me/" + String(profile.whatsapp).replace(/\D/g, ""), label: t("whatsapp") });
     if (profile.linkedin) items.push({ href: profile.linkedin, label: t("linkedin") });
+    if (profile.github) items.push({ href: profile.github, label: t("github") });
     return items;
+  }
+
+  function heroLinkRow() {
+    const downloadIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v10"></path><path d="M7.5 10.5 12 15l4.5-4.5"></path><path d="M5 19h14"></path></svg>';
+    const buttons = [];
+    if (profile.email) buttons.push({ href: "mailto:" + profile.email, label: t("getInTouch"), kind: "btn btn-primary" });
+    if (profile.github) buttons.push({ href: profile.github, label: t("github"), kind: "btn btn-ghost", external: true });
+    if (profile.linkedin) buttons.push({ href: profile.linkedin, label: t("linkedin"), kind: "btn btn-ghost", external: true });
+    if (profile.cv) buttons.push({ href: profile.cv, label: t("downloadCv"), kind: "btn btn-ghost", download: true, icon: downloadIcon });
+    if (!buttons.length) return "";
+    return '<div class="hero-actions hero-links no-print">' + buttons.map(function (button) {
+      const external = button.external ? ' target="_blank" rel="noopener noreferrer"' : "";
+      const download = button.download ? " download" : "";
+      return '<a class="' + button.kind + '" href="' + esc(button.href) + '"' + external + download + ">" +
+        (button.icon || "") + tx(button.label) + "</a>";
+    }).join("") + "</div>";
   }
 
   function projectHtml(project, index) {
@@ -551,6 +574,7 @@
             "<h1>" + tx(title()) + "</h1>" +
             '<p class="lede">' + tx(t("lede")) + "</p>" +
             '<p class="fine">' + tx(t("region")) + (city() ? " · " + tx(city()) : "") + "</p>" +
+            heroLinkRow() +
             '<div class="hero-actions no-print">' +
               '<button type="button" class="btn btn-primary" data-action="jump" data-target="work">' + tx(t("seeWork")) + "</button>" +
               '<button type="button" class="btn btn-ghost" data-action="print">' + tx(t("savePdf")) + "</button>" +

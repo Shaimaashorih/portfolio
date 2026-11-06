@@ -10,8 +10,10 @@ window.PORTFOLIO_PROFILE = {
   titleEn: "Business Systems &\nE-commerce Developer",
   cityAr: "",
   cityEn: "",
-  email: "",
+  email: "shaimaashorih@gmail.com",
   phone: "",
   whatsapp: "",
-  linkedin: ""
+  linkedin: "https://www.linkedin.com/in/shaimaa-shorih-630871281/",
+  github: "https://github.com/Shaimaashorih",
+  cv: "Shaimaa-Sharih-Habashi-Arafa-cv-1.pdf"
 };
