@@ -252,7 +252,7 @@ a { color: inherit; }
 .fact,
 .field,
 .bio-box,
-.work.is-lead {
+.work {
   background: var(--paper-2);
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -334,25 +334,22 @@ a { color: inherit; }
   white-space: nowrap;
 }
 
-.list { margin-top: 8px; }
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
 
 .work {
   display: grid;
   grid-template-columns: 76px minmax(0, 1fr);
   gap: 16px;
-  padding: 22px 0;
-  border-bottom: 1px solid var(--line);
+  padding: 22px;
+  box-shadow: var(--shadow);
 }
 
 .work.is-hidden { display: none; }
-
-.work.is-lead {
-  grid-template-columns: 76px minmax(0, 1fr);
-  padding: 22px;
-  margin-top: 16px;
-  box-shadow: var(--shadow);
-  border-bottom: 1px solid var(--line);
-}
 
 .badge {
   width: 76px;
@@ -515,8 +512,7 @@ a { color: inherit; }
 @media (max-width: 680px) {
   .facts,
   .fields,
-  .work,
-  .work.is-lead { grid-template-columns: 1fr; }
+  .work { grid-template-columns: 1fr; }
   .work-head { align-items: start; flex-direction: column; }
   .hero h1 { max-width: none; }
   .badge { width: 56px; height: 56px; border-radius: 14px; }
@@ -552,8 +548,7 @@ a { color: inherit; }
   .eyebrow { color: black; }
   .main { padding: 18px 0 0; }
   .work,
-  .work.is-hidden,
-  .work.is-lead {
+  .work.is-hidden {
     display: grid !important;
     grid-template-columns: 64px 1fr;
     break-inside: avoid;

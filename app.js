@@ -487,7 +487,6 @@
   function projectHtml(project, index) {
     const body = project[lang];
     const hidden = filter !== "all" && project.kind !== filter;
-    const lead = index === 0 ? " is-lead" : "";
     const links = project.links.map(function (link) {
       const label = lang === "ar" ? link.ar : link.en;
       return '<a href="' + esc(link.href) + '" target="_blank" rel="noopener noreferrer">' + tx(label) + "</a>";
@@ -503,7 +502,7 @@
       : "";
 
     return (
-      '<article class="work' + lead + (hidden ? " is-hidden" : "") + '">' +
+      '<article class="work' + (hidden ? " is-hidden" : "") + '">' +
         '<div class="badge" style="--mark:' + esc(project.color) + '">' + tx(project.mark) + "</div>" +
         '<div>' +
           '<div class="work-top">' +
